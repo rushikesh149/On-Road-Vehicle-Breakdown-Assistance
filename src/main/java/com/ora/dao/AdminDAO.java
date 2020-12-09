@@ -6,7 +6,7 @@ import com.ora.entity.Feedback;
 
 public interface AdminDAO {
 	
-	//jdfjsdbjvb
+	//jdfjsdbjv
 //public boolean allowOrBlockMechanic(Mechanic m);
 //public boolean verifyAndAddMechanic(Mechanic m);
 //public List viewUserDetails(User u);
