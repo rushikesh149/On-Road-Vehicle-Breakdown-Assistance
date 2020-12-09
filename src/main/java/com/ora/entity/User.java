@@ -13,9 +13,8 @@ import javax.persistence.Table;
 public class User {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column (name="userid")
-	private int UserId;
+	private int userId;
 	
 	@Column (name="username")
 	private String userName;
@@ -33,12 +32,23 @@ public class User {
 	@Column (name="userpassword")
 	private int userPassword;
 
+	public User(int userId2, String userName2, int userPhoneNumber2, String userEmailId2, String userPassword2) {
+		this.userId=userId;
+		this.userName=userName;
+		this.userPhoneNumber=userPhoneNumber;
+		this.userEmailId=userEmailId;
+		this.userPassword=userPassword;
+		
+		
+		
+	}
+
 	public int getUserId() {
-		return UserId;
+		return userId;
 	}
 
 	public void setUserId(int userId) {
-		UserId = userId;
+		userId = userId;
 	}
 
 	public String getUserName() {

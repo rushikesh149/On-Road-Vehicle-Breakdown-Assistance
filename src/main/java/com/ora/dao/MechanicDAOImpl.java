@@ -59,4 +59,9 @@ public class MechanicDAOImpl implements  MechanicDAO {
 		 return null;
 	}
 
+	public List viewMechanicDetails(Mechanic m) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
