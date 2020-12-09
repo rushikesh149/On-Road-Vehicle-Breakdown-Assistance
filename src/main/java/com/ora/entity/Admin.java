@@ -6,37 +6,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="Admin")
+
 public class Admin {
-	@Id
-	@GeneratedValue( strategy= GenerationType.AUTO ) 
-	private int adminId;
-	private String adminName;
-	public String getAdminName() {
-		return adminName;
+
+	public Admin(int adminId2, String adminName2, String password2) {
+		// TODO Auto-generated constructor stub
 	}
-	public void setAdminName(String adminName) {
-		this.adminName = adminName;
-	}
-	private String password;
-	public int getAdminId() {
-		return adminId;
-		
-	}
-	public void setAdminId(int adminId) {
-		this.adminId = adminId;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
-	
-	
-	
-	
+
 	
 }

@@ -14,7 +14,7 @@ import javax.persistence.Query;
 import com.ora.entity.Mechanic;
 
 
-public class AdminDAOInterfaceImpl{
+public class AdminDAOImpl implements AdminDAO{
 	EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-PU");
 	public void verifyAndAddMechanic(Mechanic mcn) {
 	
