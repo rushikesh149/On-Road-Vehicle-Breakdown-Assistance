@@ -12,5 +12,6 @@ public interface AdminDAO {
 //public List viewUserDetails(User u);
 //public List viewMechanicDetails(Mechanic m);
 //public List viewFeedback(Feedback feedback);
+ 
 
 }
