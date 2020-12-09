@@ -4,6 +4,12 @@ import java.util.List;
 
 import com.ora.entity.Mechanic;
 
+/**
+ * This is DAO class.
+ * 
+ * @author Rushikesh
+ *
+ */
 public interface MechanicDAO {
 	public List<Mechanic> viewRequest(int mechanicId);
 	public List<Mechanic> viewFeedback(int mechanicId);
