@@ -8,7 +8,7 @@ import com.ora.entity.User;
 public interface UserService {
 	
 
-		public void addUser(User user);
+		public User addUser(User user);
 		public void updateUser(User user);
 		public List<Mechanic> searchMechanic();
 		public String addRequest();

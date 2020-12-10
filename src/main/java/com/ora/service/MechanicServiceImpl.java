@@ -37,6 +37,14 @@ public class MechanicServiceImpl implements MechanicService {
 		//return dao.logOut(mechanic);
 		return null;
 	}
+	public static boolean validateMechanic(int mechanicId1, String mechanicPassword1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	public void addMechanic(Mechanic mechanic) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

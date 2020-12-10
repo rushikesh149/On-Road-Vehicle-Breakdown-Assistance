@@ -21,11 +21,8 @@ public class Mechanic {
 	@Column(name="mechanicname")
 	private String mechanicName;
 	
-	@Column(name="mechanicaddress")
-	private String mechanicAddress;
-
 	
-	@Column(name="mechanicphonenumber")
+	@Column(name="mechanicphonenumber",length=10)
 	private BigInteger mechanicPhoneNumber;
 
 	@Column(name="mechanicservicetype")
@@ -37,27 +34,18 @@ public class Mechanic {
 	@Column(name="mechanicpassword")
 	private String mechanicPassword;
 	
-	@Column
+	@Column(name="location")
 	private String location;
 	
-	
-public Mechanic(String mname,String mpass,String memail,String maddr,BigInteger phone,String servicetype,String location){
-	this.mechanicName=mname;
-	this.mechanicPassword=mpass;
-	this.mechanicEmailId=memail;
-	this.mechanicAddress=maddr;
-	this.mechanicPhoneNumber=phone;
-	this.mechanichServiceType=servicetype;
-	this.location=location;
-		
-		
-	}
-
 public Mechanic() {
 	super();
 	
 }
 
+	public Mechanic(int mechanicId, String mechanicName, BigInteger mechanicPhoneNumber, String mechanicEmailId,
+		String mechanicPassword) {
+
+}
 
 	public String getLocation() {
 		return location;
@@ -83,14 +71,7 @@ public Mechanic() {
 		this.mechanicName = mechanicName;
 	}
 
-	public String getMechanicAddress() {
-		return mechanicAddress;
-	}
-
-	public void setMechanicAddress(String mechanicAddress) {
-		this.mechanicAddress = mechanicAddress;
-	}
-
+	
 	public BigInteger getMechanicPhoneNumber() {
 		return mechanicPhoneNumber;
 	}

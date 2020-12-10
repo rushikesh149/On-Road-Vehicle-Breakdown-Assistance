@@ -1,6 +1,8 @@
 package com.ora.service;
 
-public interface AdminService{
-	public void addMechanic();
-	public void viewMechanicDetails();
+import java.util.List;
+
+public interface AdminService<Mechanic>{
+	//public void addMechanic();
+	public List< Mechanic > viewMechanicDetails();
 	}

@@ -1,6 +1,8 @@
 package com.ora.entity;
 
 
+import java.math.BigInteger;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,7 +24,7 @@ public class User {
 	
 	
 	@Column (name="userphonenumber")
-	private int userPhoneNumber;
+	private BigInteger userPhoneNumber;
 	
 	
 	
@@ -30,9 +32,9 @@ public class User {
 	private String userEmailId;
 	
 	@Column (name="userpassword")
-	private int userPassword;
+	private String userPassword;
 
-	public User(int userId2, String userName2, int userPhoneNumber2, String userEmailId2, String userPassword2) {
+	public User(int userId, String userName, BigInteger userPhoneNumber, String userEmailId, String userPassword) {
 		this.userId=userId;
 		this.userName=userName;
 		this.userPhoneNumber=userPhoneNumber;
@@ -60,11 +62,11 @@ public class User {
 	}
 
 	
-	public int getUserPhoneNumber() {
+	public BigInteger getUserPhoneNumber() {
 		return userPhoneNumber;
 	}
 
-	public void setUserPhoneNumber(int userPhoneNumber) {
+	public void setUserPhoneNumber(BigInteger userPhoneNumber) {
 		this.userPhoneNumber = userPhoneNumber;
 	}
 
@@ -78,11 +80,11 @@ public class User {
 		this.userEmailId = userEmailId;
 	}
 
-	public int getUserPassword() {
+	public String getUserPassword() {
 		return userPassword;
 	}
 
-	public void setUserPassword(int userPassword) {
+	public void setUserPassword(String userPassword) {
 		this.userPassword = userPassword;
 	}
 	

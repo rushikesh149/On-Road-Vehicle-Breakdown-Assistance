@@ -1,5 +1,6 @@
 package com.ora.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,11 +12,17 @@ import javax.persistence.Table;
 public class Feedback {
 	@Id
 	@GeneratedValue( strategy= GenerationType.AUTO ) 
+	@Column(name="feedbackId")
 	private int feedbackId;
+	@Column(name="userId")
 	private int userId;
+	@Column(name="mechanicId")
 	private int mechanicId;
+	@Column(name="feedback")
 	private String feedback;
+	@Column(name="ratings")
 	private float ratings;
+	
 	public int getFeedbackId() {
 		return feedbackId;
 	}

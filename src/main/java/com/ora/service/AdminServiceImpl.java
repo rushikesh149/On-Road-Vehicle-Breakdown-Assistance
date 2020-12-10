@@ -1,20 +1,23 @@
 package com.ora.service;
 
 
+import java.util.List;
+
 import com.ora.dao.AdminDAOImpl;
 import com.ora.entity.Admin;
 import com.ora.entity.Mechanic;
 
 public class AdminServiceImpl implements AdminService {
+
+	AdminDAOImpl obj;
 public void addMechanic(Mechanic mcn)
 {
-	AdminDAOImpl obj=new AdminDAOImpl();
 	obj.verifyAndAddMechanic(mcn);
 }
-public void viewMechanicDetails()
+public List< Mechanic>viewMechanicDetails()
 {
-	AdminDAOImpl obj=new AdminDAOImpl();
-	obj.viewMechanicDetails();
+	
+	return obj.viewMechanicDetails();
 	
 }
 public void addMechanic() {

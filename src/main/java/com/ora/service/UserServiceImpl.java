@@ -7,12 +7,13 @@ import com.ora.entity.User;
 
 public class UserServiceImpl implements UserService {
 
-	public static boolean validateUser(int userId, String userPassword, int userPhoneNumber, String userEmailId, String userPassword2) {
+	public static boolean validateUser(int userId, String userPassword) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	public void addUser(User user) {
+	public User addUser(User user) {
+		return user;
 		// TODO Auto-generated method stub
 		
 	}

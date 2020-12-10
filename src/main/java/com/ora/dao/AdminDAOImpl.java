@@ -37,10 +37,10 @@ public class AdminDAOImpl implements AdminDAO{
 		System.out.println();
 		System.out.println("Mechanic Name"+"\t"+"Mechanic Email Id"+"\t"+"Mechanic Address"+"\t"+"Mechanic Phone Number"+"\t"+"Mechanic Service Type"+"\t"+"Mechanic Location");
 		for(Mechanic m : list) {
-			System.out.println(m.getMechanicName()+"\t"+m.getMechanicEmailId()+"\t"+m.getMechanicAddress()+"\t\t"+m.getMechanicPhoneNumber()+"\t\t"+
+			System.out.println(m.getMechanicName()+"\t"+m.getMechanicEmailId()+"\t"+"\t\t"+m.getMechanicPhoneNumber()+"\t\t"+
 		m.getMechanichServiceType()+"\t\t"+m.getLocation());
 		}
-		return null;
+		return list;
 		
 	}
 	
